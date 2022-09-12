@@ -1,0 +1,15 @@
+<p>Welcome to Content-projection component</p>
+<!-- single slot projection -->
+<ng-content></ng-content>  
+
+<p>ng-content is used when we want to insert the content dynamically inside the component</p>
+
+<!-- multi slot projection -->
+<ng-content select="[selected]"></ng-content>
+
+<!-- conditional slot projection -->
+<p *ngIf="admin">
+    <template [ngTemplateOutlet]="admin"></template>
+</p>
+
+
